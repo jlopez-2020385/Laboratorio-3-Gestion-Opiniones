@@ -10,6 +10,6 @@ router.put("/publicacionEditar/:id",updatePublicationValidator,editarPublication
 
 router.delete("/publicacionDelete/:id", deletePublicationValidator, eliminarPublication);
 
-router.get("/", getPublications)
+router.get("/publications/:id", getPublications)
 
 export default router;

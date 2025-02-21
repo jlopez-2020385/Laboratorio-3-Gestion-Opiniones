@@ -1,5 +1,6 @@
 import User from "../user/user.model.js"
 import Publications from "../publications/publications.model.js"
+import Comment from "../comments/comment.model.js"
 
 
 export const emailExists = async (email = "") => {
@@ -32,5 +33,14 @@ export const publicationExists = async (id = "") => {
     }
     return publication;
 };
+
+export const commetExists = async (id= "")=>{
+    const commets = await Comment.findById(id);
+    if(!commets){
+        throw new Error("No existe la el comentario con el ID proporcionado")
+    }
+
+    return commets;
+}
 
 

@@ -9,6 +9,7 @@ import { crearAdministrador } from "../src/user/user.controller.js";
 import authRoutes from "../src/auth/auth.routes.js";
 import userRoutes from "../src/user/user.routes.js";
 import publicationRoutes from "../src/publications/publications.routes.js"
+import commentRoutes from "../src/comments/comment.routes.js"
 import apiLimiter from "../src/middlewares/rate-limit-validator.js";
 
 const middlewares = (app) => {
@@ -24,6 +25,7 @@ const routes = (app) => {
     app.use("/perfilUsusario/v1/auth", authRoutes);
     app.use("/perfilUsusario/v1/user", userRoutes);
     app.use("/gestionPublicaciones/v1/publicaciones", publicationRoutes);
+    app.use("/gestionComentarios/v1/comentarios", commentRoutes);
 };
 
 const conectarDB = async () => {

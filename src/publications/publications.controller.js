@@ -119,19 +119,29 @@ export const eliminarPublication = async (req, res) => {
 
 export const getPublications = async (req, res) => {
     try {
-        const query = { status: true };
+        const { id } = req.params;
 
-        const publications = await Publications.find(query);
+        const publication = await Publications.findById(id)
+        .populate({
+            path: "comments",
+            match: { status: true }, 
+        }); 
+
+        if (!publication) {
+            return res.status(404).json({
+                success: false,
+                message: "Publicación no encontrada"
+            });
+        }
 
         return res.status(200).json({
             success: true,
-            total: publications.length,
-            publications
+            publication
         });
     } catch (err) {
         return res.status(500).json({
             success: false,
-            message: "Error al obtener las publicaciones",
+            message: "Error al obtener la publicación con comentarios",
             error: err.message
         });
     }
