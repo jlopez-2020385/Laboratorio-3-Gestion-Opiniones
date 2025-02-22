@@ -13,6 +13,8 @@ import publicationRoutes from "../src/publications/publications.routes.js"
 import commentRoutes from "../src/comments/comment.routes.js"
 import categoryRoutes from "../src/category/category.routes.js"
 import apiLimiter from "../src/middlewares/rate-limit-validator.js";
+import { swaggerDocs, swaggerUi } from "./swagger.js";
+
 
 const middlewares = (app) => {
     app.use(express.urlencoded({ extended: false }));
@@ -24,11 +26,12 @@ const middlewares = (app) => {
 };
 
 const routes = (app) => {
-    app.use("/perfilUsusario/v1/auth", authRoutes);
-    app.use("/perfilUsusario/v1/user", userRoutes);
+    app.use("/gestionPublicaciones/v1/auth", authRoutes);
+    app.use("/gestionPublicaciones/v1/user", userRoutes);
     app.use("/gestionPublicaciones/v1/publicaciones", publicationRoutes);
-    app.use("/gestionComentarios/v1/comentarios", commentRoutes);
-    app.use("/gestionComentarios/v1/categotias", categoryRoutes);
+    app.use("/gestionPublicaciones/v1/comentarios", commentRoutes);
+    app.use("/gestionPublicaciones/v1/categotias", categoryRoutes);
+    app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 };
 
 const conectarDB = async () => {

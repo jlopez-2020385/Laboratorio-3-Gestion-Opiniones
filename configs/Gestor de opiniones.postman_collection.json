@@ -1,0 +1,685 @@
+{
+	"info": {
+		"_postman_id": "a61472f6-d4e3-46cc-bcee-0fb1bbea1172",
+		"name": "Gestor de opiniones",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37660302"
+	},
+	"item": [
+		{
+			"name": "Inicio de sesión y Perfil de usuario",
+			"item": [
+				{
+					"name": "Agregar un usuario 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Lupita\",\r\n  \"surname\": \"lupita22\",\r\n  \"username\": \"lupitamaria\",\r\n  \"email\": \"maria@gmail.com\",\r\n  \"phone\": \"12345678\",\r\n  \"password\": \"Mari22@secure\",\r\n  \"role\": \"USER_ROLE\",\r\n  \"profilePicture\": \"file\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar un usuario 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Emanuel\",\r\n  \"surname\": \"ema22\",\r\n  \"username\": \"emanuel lopez\",\r\n  \"email\": \"emaafd@gmail.com\",\r\n  \"phone\": \"12345678\",\r\n  \"password\": \"Emnfh21@secure\",\r\n  \"role\": \"USER_ROLE\",\r\n  \"profilePicture\": \"file\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Agregar un usuario 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Anderson\",\r\n  \"surname\": \"ander343\",\r\n  \"username\": \"anderlopez\",\r\n  \"email\": \"ander@gmail.com\",\r\n  \"phone\": \"12345678\",\r\n  \"password\": \"Andeo45@secure\",\r\n  \"role\": \"USER_ROLE\",\r\n  \"profilePicture\": \"file\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login de usuario 1",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login de usuario 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n   \"email\": \"emaafd@gmail.com\",\r\n  \"password\": \"Emnfh21@secure\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login de usuario 3",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n   \"email\": \"ander@gmail.com\",\r\n  \"password\": \"Andeo45@secure\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login de Administrador",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{ \r\n   \"email\": \"admin@gmail.com\",\r\n  \"password\": \"Abc123**\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cambiar Contraseña de Usuarios",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"currentPassword\": \"contraseña actual\",\r\n  \"newPassword\": \"contraseña nueva\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/user/updatePassword/67b7c3009bfe3b4fd0d1d6ae",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"user",
+								"updatePassword",
+								"67b7c3009bfe3b4fd0d1d6ae"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gestión de publicaciones",
+			"item": [
+				{
+					"name": "Crear Publicaciones",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3ZDc0MzdjMWQyZmI0NjA4ODU1OTQiLCJpYXQiOjE3NDAxOTIyMDMsImV4cCI6MTc0MDE5NTgwM30.D_9HWl2NT8Z0ZEsZZQ-MdByEfOaiOrfyYmvfW5zvTlk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Centro Educativo\",\r\n    \"category\": \"67b9319aada4a86e0f262b8d\",\r\n    \"content\": \"Kinal es un colegio de gran prestigio\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/publicaciones/publicacion",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"publicaciones",
+								"publicacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edición de publicaciones",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3ZDc0MzdjMWQyZmI0NjA4ODU1OTQiLCJpYXQiOjE3NDAxOTIyMDMsImV4cCI6MTc0MDE5NTgwM30.D_9HWl2NT8Z0ZEsZZQ-MdByEfOaiOrfyYmvfW5zvTlk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Codigo penal\",\r\n    \"category\": \"ggggggggg\",\r\n    \"content\": \"edición de publicaciones\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/publicaciones/publicacionEditar/67b804d381a0d43ece490f29",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"publicaciones",
+								"publicacionEditar",
+								"67b804d381a0d43ece490f29"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Elimina publicaciones",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/publicaciones/publicacionDelete/67b804e781a0d43ece490f2d",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"publicaciones",
+								"publicacionDelete",
+								"67b804e781a0d43ece490f2d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mirar Publicación",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/publicaciones/publications/67b939788a729cd3d70a1211",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"publicaciones",
+								"publications",
+								"67b939788a729cd3d70a1211"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Comentarios",
+			"item": [
+				{
+					"name": "Comentar una publicacion",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3ZDc0MzdjMWQyZmI0NjA4ODU1OTQiLCJpYXQiOjE3NDAxOTIyMDMsImV4cCI6MTc0MDE5NTgwM30.D_9HWl2NT8Z0ZEsZZQ-MdByEfOaiOrfyYmvfW5zvTlk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"Es genial el colegi ya que yo estudie hay\",\r\n    \"publication\": \"67b939788a729cd3d70a1211\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/comentarios/commentPublications",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"comentarios",
+								"commentPublications"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Comentario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3ZDc0MzdjMWQyZmI0NjA4ODU1OTQiLCJpYXQiOjE3NDAxOTIyMDMsImV4cCI6MTc0MDE5NTgwM30.D_9HWl2NT8Z0ZEsZZQ-MdByEfOaiOrfyYmvfW5zvTlk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"Este es un comentario editado.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/comentarios/commentUpdate/67b828cd3bd3a3ed74642592",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"comentarios",
+								"commentUpdate",
+								"67b828cd3bd3a3ed74642592"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Comentario",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3ZDc0MzdjMWQyZmI0NjA4ODU1OTQiLCJpYXQiOjE3NDAxOTIyMDMsImV4cCI6MTc0MDE5NTgwM30.D_9HWl2NT8Z0ZEsZZQ-MdByEfOaiOrfyYmvfW5zvTlk",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/comentarios/commentDelete/67b939fc8a729cd3d70a121d",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"comentarios",
+								"commentDelete",
+								"67b939fc8a729cd3d70a121d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gestión de categorías",
+			"item": [
+				{
+					"name": "Crear categorias",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3YmI0ZmY3MmI0YjE4YzlmZGEyNmUiLCJpYXQiOjE3NDAxOTUwMTksImV4cCI6MTc0MDE5ODYxOX0.rCdqpdGOMoAzvrUv1v2g5j0L3PPYDfbI8kRrHEbk9FA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Estudios\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/categotias/category",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"categotias",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Categoria",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3YmI0ZmY3MmI0YjE4YzlmZGEyNmUiLCJpYXQiOjE3NDAxOTUwMTksImV4cCI6MTc0MDE5ODYxOX0.rCdqpdGOMoAzvrUv1v2g5j0L3PPYDfbI8kRrHEbk9FA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Tecnologia en Sistemas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/categotias/categoryUpdate/67b8baee7a32651dad6a895d",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"categotias",
+								"categoryUpdate",
+								"67b8baee7a32651dad6a895d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar categoria",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2I3YmI0ZmY3MmI0YjE4YzlmZGEyNmUiLCJpYXQiOjE3NDAxOTUwMTksImV4cCI6MTc0MDE5ODYxOX0.rCdqpdGOMoAzvrUv1v2g5j0L3PPYDfbI8kRrHEbk9FA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:3001/gestionPublicaciones/v1/categotias/categoryDelete/67b9319aada4a86e0f262b8d",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "3001",
+							"path": [
+								"gestionPublicaciones",
+								"v1",
+								"categotias",
+								"categoryDelete",
+								"67b9319aada4a86e0f262b8d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
