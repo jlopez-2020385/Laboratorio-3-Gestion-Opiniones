@@ -7,9 +7,10 @@ const publicationSchema = Schema({
         maxLength:100
     },
 
-    category:{
-        type: String,
-        require: true
+    category: {
+        type: Schema.Types.ObjectId,
+        ref: "Category", 
+        required: true
     },
 
     content: {

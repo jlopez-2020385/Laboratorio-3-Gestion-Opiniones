@@ -1,4 +1,5 @@
 import Publications from "./publications.model.js"
+import Category from "../category/category.model.js"
 
 export const crearPublications = async (req, res) => {
     try {
@@ -8,6 +9,14 @@ export const crearPublications = async (req, res) => {
             return res.status(401).json({
                 success: false,
                 message: "Usuario no autenticado",
+            });
+        }
+
+        const categoriaExistente = await Category.findById(category);
+        if (!categoriaExistente) {
+            return res.status(404).json({
+                success: false,
+                message: "Categoría no encontrada",
             });
         }
 
@@ -122,6 +131,7 @@ export const getPublications = async (req, res) => {
         const { id } = req.params;
 
         const publication = await Publications.findById(id)
+        .populate("category", "name")
         .populate({
             path: "comments",
             match: { status: true }, 
